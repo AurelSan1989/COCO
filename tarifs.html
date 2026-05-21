@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tarifs &amp; Lieux — Coralie Yoga</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <style>
+    /* Fond spécifique tarifs */
+    body {
+      background-image: radial-gradient(circle at 50% 50%, rgba(122, 141, 120, 0.03) 0%, transparent 100%);
+    }
+    /* Paper texture */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      opacity: 0.04;
+      pointer-events: none;
+      z-index: 100;
+      background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBqqroKfnlbdl61UuksexCToLWyLXtmERlNUPY5Enp7Vr7-c9IZlybJCGZ2Gh_qu_Kbm3xy-Mp051dqQgVCn6BlvVB04SLMg6Z_PZ_rnFbXAFn-tAZa_3-bw2t2OoLlX0GTChbLeZOJCAnVK902fKXls7ECC1dZrncNJpUK-dJkmzQ9xdrptwnFsERjf5pjjNueI6QfvqN3HljBD6pK3OUi0tvo64D4Alphvq6c2-bzHWUG3CDXkkHOPJv-yiLylLjbExUvhOz2Eo4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────────────────── -->
+  <header class="site-header">
+    <nav class="site-nav">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span class="nav-brand">Coralie Yoga</span>
+      </div>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Accueil</a>
+        <a class="nav-link active" href="tarifs.html">Tarifs &amp; Lieux</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="btn-primary">Réserver</button>
+        <button class="btn-icon-menu" aria-label="Menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main style="margin-top:80px;">
+
+    <!-- ── HERO TARIFS ───────────────────────────────────── -->
+    <section class="tarifs-hero">
+      <span class="tarifs-badge">Sérénité &amp; Mouvement</span>
+      <h1 class="text-headline-xl">Tarifs &amp; Lieux</h1>
+      <p class="text-body-lg">
+        Des espaces choisis pour leur âme et leur calme, accompagnés d'une approche flexible adaptée à votre cheminement personnel.
+      </p>
+    </section>
+
+    <!-- ── GRILLE PRIX ────────────────────────────────────── -->
+    <section class="section-pricing">
+      <div class="pricing-grid">
+
+        <!-- Carte 1 : Séance unique -->
+        <div class="pricing-card pricing-card--default">
+          <div>
+            <div class="pricing-card-header">
+              <span class="material-symbols-outlined price-icon-default">energy_savings_leaf</span>
+              <span class="price-amount text-headline-md">18€</span>
+            </div>
+            <h3 class="text-headline-md">Séance Unique</h3>
+            <p class="text-body-md pricing-card-desc">Pour une découverte ou une pratique ponctuelle.</p>
+            <ul class="pricing-features">
+              <li class="pricing-feature text-body-md">
+                <span class="material-symbols-outlined">circle</span>
+                Valable 1 mois
+              </li>
+              <li class="pricing-feature text-body-md">
+                <span class="material-symbols-outlined">circle</span>
+                Accès tous lieux
+              </li>
+            </ul>
+          </div>
+          <button class="btn-outline" style="margin-top:40px;width:100%;padding:12px 24px;">Choisir</button>
+        </div>
+
+        <!-- Carte 2 : Carte 10 séances (featured) -->
+        <div class="pricing-card pricing-card--featured">
+          <div class="card-deco" aria-hidden="true">
+            <span class="material-symbols-outlined">spa</span>
+          </div>
+          <div>
+            <div class="pricing-card-header">
+              <span class="material-symbols-outlined price-icon-featured">local_florist</span>
+              <span class="price-amount text-headline-md">150€</span>
+            </div>
+            <h3 class="text-headline-md">Carte 10 Séances</h3>
+            <p class="text-body-md pricing-card-desc">Le rythme idéal pour ancrer sa pratique dans le temps.</p>
+            <ul class="pricing-features">
+              <li class="pricing-feature text-body-md">
+                <span class="material-symbols-outlined">circle</span>
+                Valable 6 mois
+              </li>
+              <li class="pricing-feature text-body-md">
+                <span class="material-symbols-outlined">circle</span>
+                Tarif préférentiel (15€/séance)
+              </li>
+            </ul>
+          </div>
+          <button class="btn-primary" style="margin-top:40px;width:100%;">Plus Populaire</button>
+        </div>
+
+        <!-- Carte 3 : Ateliers -->
+        <div class="pricing-card pricing-card--workshop">
+          <div>
+            <div class="pricing-card-header">
+              <span class="material-symbols-outlined price-icon-workshop">forest</span>
+              <span class="price-amount text-headline-md">45€</span>
+            </div>
+            <h3 class="text-headline-md">Ateliers Immersion</h3>
+            <p class="text-body-md pricing-card-desc">Des moments de 3h pour approfondir un thème spécifique.</p>
+            <ul class="pricing-features">
+              <li class="pricing-feature text-body-md">
+                <span class="material-symbols-outlined">circle</span>
+                Tisanes bio incluses
+              </li>
+              <li class="pricing-feature text-body-md">
+                <span class="material-symbols-outlined">circle</span>
+                Un dimanche par mois
+              </li>
+            </ul>
+          </div>
+          <button class="btn-outline" style="margin-top:40px;width:100%;padding:12px 24px;border-color:var(--color-tertiary);color:var(--color-tertiary);">
+            En savoir plus
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── LIEUX ──────────────────────────────────────────── -->
+    <section class="section-locations">
+      <h2 class="text-headline-xl">Nos Sanctuaires</h2>
+
+      <div class="locations-grid">
+
+        <!-- Liste des lieux -->
+        <ul class="locations-list">
+          <li class="location-item">
+            <div class="location-icon">
+              <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <div>
+              <h4>Le Studio sous le Hêtre</h4>
+              <p class="text-body-md">12 Rue des Vergers, Lyon. Un espace baigné de lumière naturelle, niché dans un jardin privé au calme absolu.</p>
+            </div>
+          </li>
+          <li class="location-item">
+            <div class="location-icon">
+              <span class="material-symbols-outlined">nature_people</span>
+            </div>
+            <div>
+              <h4>Pratique en Plein Air</h4>
+              <p class="text-body-md">Parc de la Tête d'Or (en saison). Retrouvons-nous sous les frondaisons pour respirer en harmonie avec la terre.</p>
+            </div>
+          </li>
+          <li class="location-item">
+            <div class="location-icon">
+              <span class="material-symbols-outlined">apartment</span>
+            </div>
+            <div>
+              <h4>La Loft Industriel</h4>
+              <p class="text-body-md">Quartier Confluence. Un espace brut et minimaliste pour une pratique dynamique et urbaine.</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Visuel -->
+        <div class="locations-visual">
+          <div class="locations-img-wrapper">
+            <div class="locations-img-bg organic-bg"></div>
+            <img class="organic-shape-alt"
+                 src="assets/img/coco3.jpeg"
+                 alt="Yoga dans la nature"/>
+            <div class="locations-leaf" aria-hidden="true">
+              <span class="material-symbols-outlined">psychiatry</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── SÉPARATEUR ─────────────────────────────────────── -->
+    <div class="nature-divider" aria-hidden="true">
+      <span class="material-symbols-outlined">spa</span>
+      <span class="material-symbols-outlined">eco</span>
+      <span class="material-symbols-outlined">spa</span>
+    </div>
+
+    <!-- ── CARTE ──────────────────────────────────────────── -->
+    <section class="section-map">
+      <div class="map-container">
+        <div class="map-img-wrapper">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt_8VmuimjSZLUMcmWJrgDP4120DgkN8CuYn1buGkscvtjI6_1MEiNZ1a3bJWcn4VVHBEVLGOoz7h7Zz6u7xdfMgzHfqLsOTuRCTCoZN5yJQ-bpO1f0oi1Btnp6kut1mb4QrQx2CK9Bodo377hQNR6i5jvcYfa0rvEmGANETSgxgEoxGrXQtKagd9WpewEBzjUgDDf5k4LQTDryOQ2MT88VS8vKn4RTvj3iNqGscK_9dJDKQx03NGON5wTvvTSjlEVUe_ppJoXVKc"
+               alt="Carte de Lyon"/>
+        </div>
+        <div class="map-overlay">
+          <div class="map-card">
+            <span class="material-symbols-outlined">map</span>
+            <h4>Trouvez votre chemin</h4>
+            <p class="text-body-md">Tous nos lieux sont accessibles en transports ou disposent de parkings vélos.</p>
+            <a class="map-link" href="#">
+              Voir sur Google Maps
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="site-footer footer-simple">
+    <div class="footer-inner">
+      <span class="footer-brand-name" style="font-family:var(--font-serif);font-size:var(--fs-headline-md);color:var(--color-primary);">Coralie Yoga</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a class="footer-link" href="index.html">Accueil</a>
+        <a class="footer-link active" href="tarifs.html">Tarifs &amp; Lieux</a>
+        <a class="footer-link" href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copyright" style="color:var(--color-tertiary);">© 2024 Coralie Yoga — Sérénité &amp; Mouvement</p>
+    </div>
+  </footer>
+
+</body>
+</html>
